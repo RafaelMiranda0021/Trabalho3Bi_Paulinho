@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:padding="10px"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:src="@drawable/logo_unipar"
+        >
+    </ImageView>
+
+
+    <!-- Titulo -->
+    <TextView
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_margin="10dp"
+        android:hint="GERENCIADOR DE NOTAS"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
+
+
+    <!-- Nome -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:hint="Nome" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:hint="E-mail"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:inputType="textEmailAddress" />
+
+    <!-- Idade -->
+    <EditText
+        android:id="@+id/etIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:hint="Idade"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:inputType="number" />
+
+    <!-- Disciplina -->
+    <EditText
+        android:id="@+id/etDisciplina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:hint="Disciplina" />
+
+    <!-- Nota 1º Bimestre -->
+    <EditText
+        android:id="@+id/etNota1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:hint="Nota 1º Bimestre"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:inputType="numberDecimal" />
+
+    <!-- Nota 2º Bimestre -->
+    <EditText
+        android:id="@+id/etNota2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:hint="Nota 2º Bimestre"
+        android:layout_marginTop="2px"
+        android:layout_marginEnd="2px"
+        android:inputType="numberDecimal" />
+
+    <!-- exibição de erros -->
+    <TextView
+        android:id="@+id/tvErro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <!-- Resumo das Informações -->
+    <TextView
+        android:id="@+id/tvResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+
+        <!-- Botão Enviar -->
+        <Button
+            android:backgroundTint="#3d3c3b"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:id="@+id/btnEnviar"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar" />
+
+        <!-- Botão Limpar -->
+        <Button
+            android:backgroundTint="#7c8071"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:id="@+id/btnLimpar"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
